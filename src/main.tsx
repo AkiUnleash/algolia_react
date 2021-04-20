@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import { browserHistory } from "./history";
 import Top from './components/pages/Top';
-import Login from './components/pages/Login';
+import Write from './components/pages/Write';
 import { Provider } from "react-redux"
 import { store } from './common/redux/store'
 
@@ -14,7 +14,7 @@ const App: React.FC = () => {
     <Router history={browserHistory}>
       <Switch>
         <Route exact path="/" component={Top} />
-        <Route path="/login" component={Login} />
+        <Route exact path="/write" component={Write} />
       </Switch>
     </Router>
   );
