@@ -1,9 +1,10 @@
 import * as React from 'react';
+import styles from '../../assets/scss/organisms/header.module.scss'
 
 const Header: React.FC = () => {
   return (
-    <header>
-      ヘッダー
+    <header className={styles["header"]}>
+      Algolia TEST
     </header>
   );
 };

@@ -1,17 +1,29 @@
-# React-Typescript Template
+# Algolia-React
 
 ## 概要
 
-React-Typescrpt 開発環境構築を簡略化するために、テンプレートを作成。
+Algolia を体験するためのテンプレート
 
 ## 内容
 
+- Algolia
 - React
 - Typescript
 - Redux-toolkit
 - Webpack
 - Sass
 - Dotenv
+
+## API キーの設定
+
+[.env]ファイルを作成し、Algolia の API キーを以下のように保存してください。
+
+```
+ALGOLIA_APPLICATION_ID="xxxxxxxxx"
+ALGOLIA_SEARCH_ONLY_API="xxxxxxxxxxxxxxxx"
+ALGOLIA_ADMIN_API="xxxxxxxx"
+ALGOLIA_INDEX="xxxxx"
+```
 
 ## 使い方
 
@@ -25,18 +37,4 @@ yarn start
 
 ```
 yarn build
-```
-
-## 環境変数の使い方
-
-プロジェクトの直下に[ .env ]ファイルを作成。
-
-```
-TESTDATA="環境変数のテストデータ"
-```
-
-Typescript で以下のように記載して、データを取得できる。
-
-```
-process.env.TESTDATA
 ```
